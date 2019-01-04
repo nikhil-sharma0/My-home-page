@@ -155,6 +155,30 @@
     </div>
     <!-- End #skills -->
     
+<style>
+    .gallery-image {
+        position: relative;
+    }
+    .overlay {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        left: 46px;
+    }
+    .gallery-image:hover .overlay {
+        opacity: 1;
+    }
+</style>
+    
     <div id="gallery" class="background-alt">
         <h2 class="heading">Gallery</h2>
         <div class="container">
@@ -162,21 +186,25 @@
                 <div class="gallery-image" style="width:25%;">
                     <a href="https://www.youtube.com/watch?v=pkqzFUhGPJg">
                         <img src="images/1.jpg" width="200" height="300"/>
+                        <div class="overlay">Click to play the trailer</div>
                     </a>
                 </div>
                 <div class="gallery-image" style="width:25%;">
                     <a href="https://www.youtube.com/watch?v=seMwpP0yeu4">
-                        <img src="images/4.jpg" width="200" height="300"/>
+                        <img src="images/4.jpg" width="200" height="300" class="image"/>
+                        <div class="overlay">Click to play the trailer</div>
                     </a>
                 </div>
                 <div class="gallery-image" style="width:25%;">
                     <a href="https://www.youtube.com/watch?v=z3biFxZIJOQ">
                         <img src="images/3.jpg" width="200" height="300"/>
+                        <div class="overlay">Click to play the trailer</div>
                     </a>
                 </div>
                 <div class="gallery-image" style="width:25%;">
                     <a href="https://www.youtube.com/watch?v=TbQm5doF_Uc">
                         <img src="images/2.jpg" width="200" height="300"/>
+                        <div class="overlay">Click to play the trailer</div>
                     </a>
                 </div>
             </div>
