@@ -1,5 +1,5 @@
 /*!
-    I created this JavaScript file in order to get the webpage a little more functional. 
+    I created this JavaScript file in order to get the webpage a little more functional.
     I have added some animations as well which you might have noticed while
     navigating to different sections of the web page using the navigation
     bar present at the top of the page.
@@ -25,7 +25,7 @@
 
         $('html, body').animate({
             scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset-n(t).offset().top)/1);
+        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
 
         // Hide the menu once clicked if mobile
         if ($('header').hasClass('active')) {
